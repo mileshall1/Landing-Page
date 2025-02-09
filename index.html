@@ -6,7 +6,16 @@
 -->
 <html>
 <head>
-    <title>Miles Hall by HTML5 UP</title>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YEHBN4667V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YEHBN4667V');
+</script>
+    <title>Miles Hall Portfolio Page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -24,6 +33,7 @@
 </head>
 <body class="is-preload">
 
+
     <!-- Sidebar -->
     <section id="sidebar">
         <div class="inner">
@@ -33,6 +43,9 @@
                     <li><a href="#one">Who I am</a></li>
                     <li><a href="#two">What I do</a></li>
                     <li><a href="#three">Get in touch</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="elements.html">Resume</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -44,7 +57,8 @@
         <!-- Intro -->
         <section id="intro" class="wrapper style1 fullscreen fade-up">
             <div class="inner">
-                <img src="https://lh3.googleusercontent.com/pw/AP1GczO2iBw63SE4tnhij1Q10m1MF3Ft8h38s4sTygtoEr1mGlduwWdPv4Dg02zxkJowJlI1JkeI9vlZCTabWyyGHVRG8uw2cEafF_NmL7g1ehdf__N9UA=w2400" alt="Miles Hall" class="profile-photo" />
+                <img src="images/miles.jpg" alt="Miles Hall" class="profile-photo" />
+
                 <h1>Miles Hall</h1>
                 <p>Aspiring computer science student at Loyola University Maryland. With a passion for software development and a strong foundation in Python and Java, I am dedicated to advancing my skills and contributing to the tech community. I am particularly interested in exploring artificial intelligence and data security, and I am excited about the opportunities to apply my knowledge in real-world projects.</p>
                 <ul class="actions">
@@ -102,17 +116,17 @@
                 <section>
                     <span class="icon solid major fa-code"></span>
                     <h3>Programming Languages</h3>
-                    <p>Proficient in Java and Python. I have used Python for various projects including ATM simulations, language translators, and interactive games. With Java, I have developed card games, Conway's Game of Life, and Maze Runner, among other projects.</p>
+                    <p>Proficient in Java, Python, Javascript, TypeScript, CSS. I have used Python for various projects including ATM simulations, language translators, and interactive games. With Java, I have developed card games, Conway's Game of Life, and Maze Runner, among other projects.</p>
                 </section>
                 <section>
                     <span class="icon solid major fa-lock"></span>
                     <h3>Technology and Tools</h3>
-                    <p>Familiar with Git, IntelliJ IDEA, Visual Studio Code, Replit, OnlineGDB, Excel, and more.</p>
+                    <p>Proficient in NextJS, React, HTML, CSS, StripeAPI, Material UI, Firebase, Clerk, Tailwind CSS, Git, GitHub, Pinecone, Gemini LLM, Firebase Firestore, and RESTful API integration.</p>
                 </section>
                 <section>
                     <span class="icon solid major fa-cog"></span>
                     <h3>Projects</h3>
-                    <p>Currently working on a Fashion AI project with friends, where users submit their wardrobe and the AI suggests outfit combinations based on current trends and user preferences.</p>
+                    <li><a href="projects.html" class="button">My projects</a></li>
                 </section>
                 <section>
                     <span class="icon solid major fa-desktop"></span>
@@ -123,12 +137,18 @@
                     <span class="icon solid major fa-link"></span>
                     <h3>Additional Interests</h3>
                     <p>In addition to my core skills, I am exploring various areas within computer science, including advanced machine learning techniques and cybersecurity. I am committed to continuous learning and staying updated with industry trends.</p>
-                </section>
-                <section>
-                    <span class="icon major fa-gem"></span>
-                    <h3>Achievements</h3>
-                    <p>Maintained a 3.5 GPA and completed coursework in algorithms, data structures, and operating systems. Currently completing a Fellowship at HeadStarter AI where I am gaining hands-on experience in software development and AI projects. Received the Dean's List award for academic excellence.</p>
-                </section>
+                    <section>
+                        <span class="icon solid major fa-trophy"></span>
+                        <h3>Achievements</h3>
+                        <ul class="alt">
+                            <li><i class="icon solid fa-award"></i> <strong>Dean’s List</strong> - Spring 2024</li>
+                            <li><i class="icon solid fa-graduation-cap"></i> <strong>Hyman Science Scholar</strong> - Recognized for academic excellence in Computer Science</li>
+                            <li><i class="icon solid fa-briefcase"></i> <strong>Selected for MLT Career Prep</strong> - Exclusive 18-month program for top diverse talent</li>
+                            <li><i class="icon solid fa-laptop-code"></i> <strong>Accepted into SEO EDGE</strong> - Intensive technical and professional development program</li>
+                            <li><i class="icon solid fa-users"></i> <strong>Founded ColorStack @ LUM Chapter</strong> - Built a thriving tech community for underrepresented students</li>
+                        </ul>
+                    </section>
+            
                 <ul class="actions">
                     <li><a href="generic.html" class="button">Learn more</a></li>
                 </ul>
@@ -140,27 +160,39 @@
             <div class="inner">
                 <h2>Get in touch</h2>
                 <p>If you'd like to get in touch, please feel free to reach out. I'm always open to discussing potential projects, collaborations, or any questions you might have about my work and experiences.</p>
+                
+                <!-- Email Button Section -->
                 <section>
-                    <form method="post" action="#">
+                    <ul class="actions">
+                        <li><a href="mailto:mileshall423@gmail.com?subject=Resume%20Inquiry&body=Hello%20Miles,%0A%0AI%20would%20like%20to%20discuss%20your%20resume.%0A%0AThank%20you." class="button primary">Email Me</a></li>
+                    </ul>
+                </section>
+
+                <!-- Contact Form using Formspree -->
+                <section>
+                    <form id="contact-form" method="post" action="https://formspree.io/f/mdknadyy">
                         <div class="fields">
                             <div class="field half">
                                 <label for="name">Name</label>
-                                <input type="text" name="name" id="name" />
+                                <input type="text" name="name" id="name" required />
                             </div>
                             <div class="field half">
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email" />
+                                <input type="email" name="email" id="email" required />
                             </div>
                             <div class="field">
                                 <label for="message">Message</label>
-                                <textarea name="message" id="message" rows="5"></textarea>
+                                <textarea name="message" id="message" rows="5" required></textarea>
                             </div>
                         </div>
                         <ul class="actions">
-                            <li><a href="#" class="button submit">Send Message</a></li>
+                            <li><input type="submit" value="Send Message" class="button submit" /></li>
                         </ul>
+                        <p id="form-status" style="display:none;">Thank you for your message! I will get back to you soon.</p>
                     </form>
                 </section>
+
+                <!-- Existing Contact Details -->
                 <section>
                     <ul class="contact">
                         <li>
@@ -174,11 +206,8 @@
                         <li>
                             <h3>Social</h3>
                             <ul class="icons">
-                                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="https://github.com/mileshall1" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                                <li><a href="https://www.linkedin.com/in/miles-hall-3a26732b2" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -186,17 +215,16 @@
             </div>
         </section>
 
+        <!-- Footer -->
+        <footer id="footer" class="wrapper style1-alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
     </div>
-
-    <!-- Footer -->
-    <footer id="footer" class="wrapper style1-alt">
-
-        <div class="inner">
-            <ul class="menu">
-                <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </div>
-    </footer>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -206,6 +234,34 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var form = event.target;
+            var formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(function(response) {
+                if (response.ok) {
+                    document.getElementById('form-status').style.display = 'block';
+                    form.reset();
+                } else {
+                    response.json().then(function(data) {
+                        if (Object.hasOwn(data, 'errors')) {
+                            alert('Oops! There was a problem submitting your form');
+                        }
+                    })
+                }
+            }).catch(function(error) {
+                alert('Oops! There was a problem submitting your form');
+            });
+        });
+    </script>
 
 </body>
 </html>
